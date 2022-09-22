@@ -4,5 +4,5 @@
     padding-left: 5cm;
     background-image: url("../Images/Background_header.jpg");
     filter: blur(background-image);
-    background-repeat: repeat-y;
+    background-repeat: round;
         }
