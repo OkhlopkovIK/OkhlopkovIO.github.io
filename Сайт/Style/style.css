@@ -17,3 +17,7 @@ footer {
     padding: var (--padding);
     margin: var (--padding);
 }
+h3{
+    color:black;
+    margin: 0;
+}
