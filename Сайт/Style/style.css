@@ -5,4 +5,13 @@
     background-image: url("../Images/Background_header.jpg");
     background-repeat: round;
     text-align: center;
-        }
+    }
+body {
+    --bgcolor: green;
+    --padding: 20px 10px;
+}
+footer {
+    background-color: var (--bgcolor);
+    padding: var (--padding);
+    margin: var (--padding);
+}
