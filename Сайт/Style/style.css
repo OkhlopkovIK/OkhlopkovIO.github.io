@@ -9,7 +9,9 @@
 body {
     --bgcolor: green;
     --padding: 20px 10px;
-    font-family: ;
+    font-family: 'Fira Sans Condensed';
+    font-style: italic;
+    font-weight: 500;
 }
 footer {
     --bgcolor: green;
