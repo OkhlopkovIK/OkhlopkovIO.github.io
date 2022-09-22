@@ -11,6 +11,8 @@ body {
     --padding: 20px 10px;
 }
 footer {
+    --bgcolor: green;
+    --padding: 20px 10px;
     background-color: var (--bgcolor);
     padding: var (--padding);
     margin: var (--padding);
