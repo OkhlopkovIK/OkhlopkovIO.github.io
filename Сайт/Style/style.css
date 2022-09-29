@@ -14,7 +14,7 @@ body {
     font-weight: 500;
 }
 footer {
-    background-color: green;
+    background-color: var(--bgcolor);
     padding: var (--padding);
     margin: var (--padding);
 }
