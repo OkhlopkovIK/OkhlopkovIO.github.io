@@ -7,7 +7,7 @@
     text-align: center;
     }
 body {
-    --bgcolor: green;
+    --bgcolor: rgb(216, 97, 13);
     --padding: 20px 10px;
     font-family: 'Fira Sans Condensed';
     font-style: italic;
