@@ -25,7 +25,9 @@ h2{
 .menu_nav{
     display:flex;
 }
-
+.menu_nav li{
+    display: inline;
+}
 
 /* fira-sans-condensed-300italic - latin_cyrillic */
 @font-face {
