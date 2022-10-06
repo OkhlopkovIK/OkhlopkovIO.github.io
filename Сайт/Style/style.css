@@ -61,6 +61,8 @@ h2{
     max-width: 1000px;
     min-height: 250px;
     width: 80%;
+    margin: 0 auto;
+    padding: 10px 20px;
 }
 
 /* fira-sans-condensed-300italic - latin_cyrillic */
