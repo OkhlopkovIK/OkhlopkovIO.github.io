@@ -53,6 +53,10 @@ h2{
     height: 100px;
     margin-bottom: 0;
 }
+.main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
 
 /* fira-sans-condensed-300italic - latin_cyrillic */
 @font-face {
