@@ -26,6 +26,9 @@ h2{
     display:flex;
 }
 .menu logo{
+    display: flex;
+}
+.logo img{
     display: inline;
 }
 .menu menu_nav{
