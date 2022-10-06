@@ -24,6 +24,7 @@ h2{
 }
 .menu{
     display:flex;
+    flex-wrap: wrap;
 }
 .header_logo{
     flex-basis: 10%;
@@ -32,14 +33,19 @@ h2{
     display:flex;
     flex-basis: 90%;
     justify-content: right;
-    margin: -10px;
-    padding: 10px 30px;
 }
 .menu_nav li{
     display: inline;
+    margin: -10px;
+    padding: 10px 30px;
+    width: 130px;
 }
 .menu_nav a{
     display: inline-block;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* fira-sans-condensed-300italic - latin_cyrillic */
