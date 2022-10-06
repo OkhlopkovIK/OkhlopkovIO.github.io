@@ -1,13 +1,13 @@
 .header {
     background-color: #70aedb;
-    margin: 0;
+    margin: 20;
     padding-left: 5cm;
     background-image: url("../Images/Backphoto.jpg");
     background-repeat: round;
     text-align: center;
     }
 body {
-    --bgcolor: rgb(216, 97, 13);
+    --bgcolor: rgb(170, 210, 232);
     --padding: 20px 10px;
     font-family: 'Fira Sans Condensed';
     font-style: italic;
