@@ -22,7 +22,13 @@ h2{
     color:black;
     margin: 0;
 }
-.menu_nav{
+.menu{
+    display:flex;
+}
+.menu logo{
+    display: inline;
+}
+.menu menu_nav{
     display:flex;
 }
 .menu_nav li{
