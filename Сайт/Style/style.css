@@ -25,14 +25,12 @@ h2{
 .menu{
     display:flex;
 }
-.menu logo{
-    display: flex;
+.header_logo{
+    flex-basis: 10%;
 }
-.logo img{
-    display: inline;
-}
-.menu menu_nav{
+.menu_nav{
     display:flex;
+    flex-basis: 90%;
 }
 .menu_nav li{
     display: inline;
