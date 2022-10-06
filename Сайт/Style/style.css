@@ -36,6 +36,9 @@ h2{
 .menu_nav li{
     display: inline;
 }
+.menu_nav a{
+    display: inline-block;
+}
 
 /* fira-sans-condensed-300italic - latin_cyrillic */
 @font-face {
