@@ -51,6 +51,7 @@ h2{
     flex-wrap: wrap;
     justify-content: space-between;
     height: 100px;
+    margin-bottom: 0;
 }
 
 /* fira-sans-condensed-300italic - latin_cyrillic */
