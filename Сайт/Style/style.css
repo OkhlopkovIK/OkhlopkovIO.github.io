@@ -3,6 +3,7 @@
     --bgcolor1: rgb(11, 4, 1);
     --bcolor: rgb(11, 4, 1);
     --tcolor:rgb(237, 199, 32);
+    --tbcolor: rgb(163, 238, 59);
 }
 .header {
     margin: 5px 5px 2.5px;
@@ -85,6 +86,7 @@ h2{
     display: inline-block;
 }
 .menu_nav a:hover{
+    color: var(--tbcolor);
     background:var(--bgcolor);
 }
 .footer{
