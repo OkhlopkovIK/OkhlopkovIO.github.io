@@ -3,7 +3,7 @@
     --bgcolor1: rgb(10, 4, 0);
 }
 .header {
-    margin: 20;
+    margin: 20px;
     padding-left: 1cm;
     background-image: url("../Images/Header_back.png");
     background-color: var(--bgcolor);
@@ -22,7 +22,7 @@
     background-repeat: round;
 }
 .main{
-    margin: 20;
+    margin: 20px;
     padding: 20px 10px;
     background-color: var(--bgcolor);
     }
