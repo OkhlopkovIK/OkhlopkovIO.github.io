@@ -3,7 +3,7 @@
     --bgcolor1: rgb(11, 4, 1);
 }
 .header {
-    margin: 10px;
+    margin: 5px;
     padding: 10px;
     padding-left: 1cm;
     background-image: url("../Images/Header_back.png");
@@ -29,7 +29,7 @@
     background-repeat: round;
 }
 .main{
-    padding: 5px 10px;
+    padding: 5px;
     background-color: var(--bgcolor1);
     }
 .main1{
