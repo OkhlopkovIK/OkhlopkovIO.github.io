@@ -20,7 +20,7 @@
 }
 .photo_sec_back{
     padding: 20px;
-    border-width: 1px;
+    border-width: 2px;
     border-color: var(--bcolor);
     background-image: url("../Images/Saloon_back.jpg");
     background-color: var(--bgcolor);
