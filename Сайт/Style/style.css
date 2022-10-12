@@ -1,5 +1,6 @@
 .colors{
     --bgcolor: rgb(51, 26, 6);
+    --bgcolor1: rgb(15, 7, 1);
 }
 .header {
     margin: 20;
@@ -22,11 +23,16 @@
 }
 .main {
     margin: 20;
-    padding: 20px;
-    background-image: url("../Images/Saloon_back.jpg");
-    background-color: var(--bgcolor);
+    padding: 20px 10px;
+    background-color: var(--bgcolor1);
     background-repeat: round;
     }
+.main1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-content: center;
+    text-align: right;
+}
 body {
     font-family: 'Fira Sans Condensed';
     font-style: italic;
@@ -68,10 +74,6 @@ h2{
     height: 100px;
     margin-bottom: 0;
     padding: 0 100px;
-}
-.main1{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
 }
 
 /* fira-sans-condensed-300italic - latin_cyrillic */
