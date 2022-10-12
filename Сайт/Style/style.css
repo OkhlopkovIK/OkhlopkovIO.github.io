@@ -23,7 +23,7 @@
     background-repeat: round;
 }
 .photo_div_back{
-    margin: 20px;
+    padding: 20px;
     background-image: url("../Images/Old_paper.jpg");
     background-color: var(--bgcolor);
     background-repeat: round;
