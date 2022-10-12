@@ -20,11 +20,13 @@
     background-color: var(--bgcolor);
     background-repeat: round;
 }
-.photo_sec_text{
-    font-family: 'Fira Sans Condensed';
-    font-style: italic;
-    font-weight: 500;
-}
+.main {
+    margin: 20;
+    padding: 20px;
+    background-image: url("../Images/Header_back.png");
+    background-color: var(--bgcolor);
+    background-repeat: round;
+    }
 body {
     font-family: 'Fira Sans Condensed';
     font-style: italic;
