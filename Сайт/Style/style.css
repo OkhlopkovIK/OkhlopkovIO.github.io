@@ -8,20 +8,30 @@
     background-color: var(--bgcolor);
     background-repeat: round;
     }
+.wrapper{
+    max-width: 1000px;
+    min-height: 250px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.photo_sec_back{
+    background-image: url("../Images/Old_paper.jpg");
+    background-color: var(--bgcolor);
+    background-repeat: round;
+}
+.photo_sec_text{
+    font-family: 'Fira Sans Condensed';
+    font-style: italic;
+    font-weight: 500;
+}
 body {
-    --bgcolor: rgb(170, 210, 232);
-    --padding: 20px 10px;
     font-family: 'Fira Sans Condensed';
     font-style: italic;
     font-weight: 500;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
-footer {
-    background-color: var(--bgcolor);
-    padding: var(--padding);
-    margin: var(--padding);
 }
 h2{
     color:black;
@@ -60,13 +70,6 @@ h2{
 .main1{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-}
-.wrapper{
-    max-width: 1000px;
-    min-height: 250px;
-    width: 80%;
-    margin: 0 auto;
-    padding: 10px 20px;
 }
 
 /* fira-sans-condensed-300italic - latin_cyrillic */
