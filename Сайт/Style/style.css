@@ -1,12 +1,13 @@
+.colors{
+    --bgcolor: rgb(51, 26, 6);
+}
 .header {
     margin: 20;
     padding-left: 1cm;
-    background-image: url("../Images/Old_paper.jpg");
+    background-image: url("../Images/Header_back.jpg");
+    background-color: var(--bgcolor);
     background-repeat: round;
     }
-.colors{
-    --bgcolor: rgb(170, 210, 232);
-}
 body {
     --bgcolor: rgb(170, 210, 232);
     --padding: 20px 10px;
@@ -49,10 +50,12 @@ h2{
 }
 .footer{
     display: flex;
+    padding-top: 10px;
     flex-wrap: wrap;
     justify-content: space-between;
     height: 100px;
     margin-bottom: 0;
+    padding: 0 100px;
 }
 .main1{
     display: grid;
