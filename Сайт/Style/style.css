@@ -25,7 +25,8 @@
     background-repeat: round;
 }
 .photo_div_back{
-    border-width: 1;
+    border-width: 2px;
+    border-style: solid;
     border-color: var(--bcolor);
     background-image: url("../Images/Old_paper.jpg");
     background-color: var(--bgcolor);
