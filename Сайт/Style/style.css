@@ -85,7 +85,7 @@ h2{
     display: inline-block;
 }
 .menu_nav a:hover{
-    color:var(--bgcolor);
+    background:var(--bgcolor);
 }
 .footer{
     display: flex;
