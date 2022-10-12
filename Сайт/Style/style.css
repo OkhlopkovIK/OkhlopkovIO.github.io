@@ -17,6 +17,11 @@
     padding: 40px;
 }
 .photo_sec_back{
+    background-image: url("../Images/Saloon_back.jpg");
+    background-color: var(--bgcolor);
+    background-repeat: round;
+}
+.photo_div_back{
     background-image: url("../Images/Old_paper.jpg");
     background-color: var(--bgcolor);
     background-repeat: round;
