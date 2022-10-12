@@ -20,14 +20,12 @@
 }
 .photo_sec_back{
     padding: 15px;
-    border-width: 10px;
-    border-color: var(--bcolor);
     background-image: url("../Images/Saloon_back.jpg");
     background-color: var(--bgcolor);
     background-repeat: round;
 }
 .photo_div_back{
-    border-width: 2px;
+    border-width: 10px;
     border-color: var(--bcolor);
     background-image: url("../Images/Old_paper.jpg");
     background-color: var(--bgcolor);
