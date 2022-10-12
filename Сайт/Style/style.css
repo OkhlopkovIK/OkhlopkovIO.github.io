@@ -23,12 +23,13 @@
     background-repeat: round;
 }
 .photo_div_back{
+    margin: 20px;
     background-image: url("../Images/Old_paper.jpg");
     background-color: var(--bgcolor);
     background-repeat: round;
 }
 .main{
-    padding: 10px;
+    padding: 5px 10px;
     background-color: var(--bgcolor1);
     }
 .main1{
