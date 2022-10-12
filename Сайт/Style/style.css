@@ -1,11 +1,12 @@
 .header {
-    background-color: #70aedb;
     margin: 20;
-    padding-left: 5cm;
+    padding-left: 1cm;
     background-image: url("../Images/Old_paper.jpg");
     background-repeat: round;
-    text-align: center;
     }
+.colors{
+    --bgcolor: rgb(170, 210, 232);
+}
 body {
     --bgcolor: rgb(170, 210, 232);
     --padding: 20px 10px;
