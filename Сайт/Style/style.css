@@ -1,12 +1,12 @@
 :root{
     --bgcolor: rgb(51, 26, 6);
-    --bgcolor1: rgb(10, 4, 0);
+    --bgcolor1: rgb(11, 4, 1);
 }
 
 .header {
     padding-left: 1cm;
     background-image: url("../Images/Header_back.png");
-    background-color: var(--bgcolor);
+    background-color: var(--bgcolor1);
     background-repeat: round;
     }
 .wrapper{
@@ -28,7 +28,7 @@
 }
 .main{
     padding: 20px 10px;
-    background-color: var(--bgcolor);
+    background-color: var(--bgcolor1);
     }
 .main1{
     display: grid;
