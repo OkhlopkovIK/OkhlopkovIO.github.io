@@ -10,7 +10,7 @@
     background-image: url("../Images/Header_back.png");
     background-color: var(--bgcolor1);
     background-repeat: round;
-    }
+}
 .wrapper{
     max-width: 1000px;
     min-height: 250px;
@@ -27,6 +27,8 @@
     background-repeat: round;
 }
 .photo_div_back{
+    border-width: 2px;
+    border-color: var(--bcolor);
     background-image: url("../Images/Old_paper.jpg");
     background-color: var(--bgcolor);
     background-repeat: round;
