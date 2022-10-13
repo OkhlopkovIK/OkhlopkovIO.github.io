@@ -55,16 +55,15 @@
 .html_cards{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    align-content: center;
+    align-items: center;
 }
 .cards{
     grid-column: span 1;
     margin-top: 15px;
-    justify-content: center;
 }
 .cards_t{
     color: var(--tcolor);
-    font-size: 20px;
+    font-size: 10px;
 }
 .main{
     margin: 2.5px 5px;
