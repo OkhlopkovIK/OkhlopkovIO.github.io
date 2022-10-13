@@ -43,14 +43,22 @@
 .ican_sec{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: minmax(200px, auto);
     align-content: center;
-    text-align: right;
 }
 .ican_sec_back{
     padding: 15px;
     background-image: url("../Images/Header_back.png");
     background-color: var(--bgcolor);
     background-repeat: round;
+}
+.html_cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.cards{
+    grid-column: span 1;
+    margin-top: 15px;
 }
 .main{
     margin: 2.5px 5px;
