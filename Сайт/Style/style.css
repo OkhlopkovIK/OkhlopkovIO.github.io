@@ -40,6 +40,18 @@
     background-color: var(--bgcolor);
     background-repeat: round;
 }
+.ican_sec{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-content: center;
+    text-align: right;
+}
+.ican_sec_back{
+    padding: 15px;
+    background-image: url("../Images/Header_back.png");
+    background-color: var(--bgcolor);
+    background-repeat: round;
+}
 .main{
     margin: 2.5px 5px;
     background-color: var(--bgcolor1);
