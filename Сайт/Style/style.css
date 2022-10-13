@@ -154,6 +154,9 @@ body{
     justify-items: center;
     width: 100%;
 }
+textarea{
+    resize:none;
+} 
 
 /* fira-sans-condensed-300italic - latin_cyrillic */
 @font-face {
