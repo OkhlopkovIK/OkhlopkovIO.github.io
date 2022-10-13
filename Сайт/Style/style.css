@@ -76,15 +76,15 @@
     background-color: var(--bgcolor1);
     background-repeat: round;
 }
-.html_lists{
+.lists{
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
-.lists{
+.list{
     grid-column: span 1;
     margin-top: 15px;
-    align-self: center;
-    justify-self: center;
+    /*align-self: center;
+    justify-self: center;*/
 }
 .main{
     text-align: center;
