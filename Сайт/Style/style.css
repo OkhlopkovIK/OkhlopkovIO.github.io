@@ -59,6 +59,7 @@
 .cards{
     grid-column: span 1;
     margin-top: 15px;
+    justify-content: center;
 }
 .main{
     margin: 2.5px 5px;
