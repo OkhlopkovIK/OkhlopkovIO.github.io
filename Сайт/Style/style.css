@@ -27,7 +27,7 @@
     padding: 40px;
 }
 .photo_sec_back{
-    margin: 2.5px 10px;
+    margin: 2.5px 40px;
     padding: 15px;
     background-image: url("../Images/Saloon_back.jpg");
     background-color: var(--bgcolor);
