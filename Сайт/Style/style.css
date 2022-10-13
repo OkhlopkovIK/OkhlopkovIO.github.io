@@ -145,7 +145,7 @@
     padding: 0 100px;
 }
 .item{
-    background-color: var(--tbcolor);
+    background-color: var(--bgcolor);
     text-align: center;
 }
 .grid{
