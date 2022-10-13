@@ -84,7 +84,7 @@
     justify-self: center;
 }
 .main{
-    text-align: center;
+    /* text-align: center; */
     margin: 2.5px 5px;
     background-color: var(--bgcolor1);
 }
