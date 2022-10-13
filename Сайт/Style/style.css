@@ -59,8 +59,8 @@
 .cards{
     grid-column: span 1;
     margin-top: 15px;
-    align-self: center;
-    justify-self: center;
+    /*align-self: center;
+    justify-self: center;*/
 }
 .cards_t{
     color: var(--tcolor);
@@ -84,9 +84,10 @@
     justify-self: center;
 }
 .main{
+    text-align: center;
     margin: 2.5px 5px;
     background-color: var(--bgcolor1);
-    }
+}
 .main1{
     display: grid;
     grid-template-columns: repeat(2,1fr);
