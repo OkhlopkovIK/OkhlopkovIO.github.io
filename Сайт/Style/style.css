@@ -57,9 +57,10 @@
     grid-template-columns: repeat(3,1fr);
 }
 .cards{
-    justify-content: center;
     grid-column: span 1;
     margin-top: 15px;
+    align-self: center;
+    justify-self: center;
 }
 .cards_t{
     color: var(--tcolor);
@@ -75,7 +76,7 @@
     align-content: center;
     text-align: right;
 }
-body {
+body{
     background-color: var(--bgcolor1);
     font-family: 'Fira Sans Condensed';
     font-style: italic;
