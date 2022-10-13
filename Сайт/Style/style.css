@@ -65,7 +65,7 @@
 .cards_t{
     color: var(--tcolor);
     font-size: 15px;
-    text-align: center;
+   /* text-align: center; */
 }
 .myqual_sec_back{
     padding: 15px;
