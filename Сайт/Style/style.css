@@ -57,7 +57,7 @@
     grid-template-columns: repeat(3,1fr);
 }
 .cards{
-    align-items: center;
+    align-content: center;
     grid-column: span 1;
     margin-top: 15px;
 }
