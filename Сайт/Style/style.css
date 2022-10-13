@@ -71,7 +71,8 @@ body {
     flex-basis: 90%;
     margin-left: 10px;
     list-style-type: none;
-    margin:  0;
+    margin:  0px;
+    align-items: center;
     justify-content: right;
 }
 .menu_nav li{
