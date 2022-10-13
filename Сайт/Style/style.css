@@ -40,14 +40,15 @@
     background-color: var(--bgcolor);
     background-repeat: round;
 }
-.ican_sec{
+/*.ican_sec{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-auto-rows: minmax(200px, auto);
     align-content: center;
-}
-.ican_sec_back{
-    padding: 15px;
+} */
+.brown_wooden_back{
+    margin: 2.5px 5px;
+    /*padding: 15px; */
     background-image: url("../Images/Header_back.png");
     background-color: var(--bgcolor1);
     background-repeat: round;
@@ -84,7 +85,7 @@
     justify-self: center;
 }
 .main{
-    /* text-align: center; */
+    text-align: center;
     margin: 2.5px 5px;
     background-color: var(--bgcolor1);
 }
