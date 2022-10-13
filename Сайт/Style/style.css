@@ -49,7 +49,7 @@
 .ican_sec_back{
     padding: 15px;
     background-image: url("../Images/Header_back.png");
-    background-color: var(--bgcolor);
+    background-color: var(--bgcolor1);
     background-repeat: round;
 }
 .html_cards{
@@ -66,6 +66,22 @@
     color: var(--tcolor);
     font-size: 15px;
     text-align: center;
+}
+.myqual_sec_back{
+    padding: 15px;
+    background-image: url("../Images/Old_paper.jpg");
+    background-color: var(--bgcolor1);
+    background-repeat: round;
+}
+.html_lists{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.lists{
+    grid-column: span 1;
+    margin-top: 15px;
+    align-self: center;
+    justify-self: center;
 }
 .main{
     margin: 2.5px 5px;
@@ -127,6 +143,16 @@ body{
     height: 100px;
     margin-bottom: 0;
     padding: 0 100px;
+}
+.item{
+    background-color: var(--tbcolor);
+    text-align: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    width: 100%;
 }
 
 /* fira-sans-condensed-300italic - latin_cyrillic */
