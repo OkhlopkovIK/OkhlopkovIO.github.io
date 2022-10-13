@@ -147,6 +147,7 @@
 .item{
     background-color: var(--bgcolor);
     text-align: center;
+    color: var(--tcolor);
 }
 .grid{
     display: grid;
