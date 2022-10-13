@@ -63,6 +63,14 @@
     background-repeat: round;
 }
 
+.black_wooden_back{
+    margin: 5px 0;
+    padding: 10px 0;
+    background-image: url("../Images/Back_blackwood.jpg");
+    background-color: var(--bgcolor1);
+    background-repeat: round;
+}
+
 .html_cards{
     display: grid;
     grid-template-columns: repeat(3,1fr);
