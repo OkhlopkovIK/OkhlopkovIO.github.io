@@ -57,7 +57,7 @@
 
 .brown_wooden_back{
     margin: 5px 0;
-    /*padding: 15px; */
+    padding: 10px 0;
     background-image: url("../Images/Header_back.png");
     background-color: var(--bgcolor1);
     background-repeat: round;
@@ -96,7 +96,6 @@
 .list{
     grid-column: span 1;
     margin-top: 15px;
-    text-align: center;
     /*align-self: center;
     justify-self: center;*/
 }
