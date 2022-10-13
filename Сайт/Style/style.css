@@ -93,7 +93,7 @@
     align-content: center;
     text-align: right;
 }
-body{
+.body{
     background-color: var(--bgcolor1);
     font-family: 'Fira Sans Condensed';
     font-style: italic;
