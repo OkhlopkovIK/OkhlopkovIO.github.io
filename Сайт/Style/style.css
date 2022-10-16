@@ -290,7 +290,8 @@
     justify-content: space-between;
     align-items: center;
     background-color: rgb(228, 196, 160);
-    background-image: url("../Images/Footer1.png");
+    background-image: url("../Images/Footer.png");
+    background-size: contain;
 }
 
 .item{
