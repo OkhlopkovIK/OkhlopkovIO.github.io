@@ -294,6 +294,7 @@
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-origin: border-box;
+    background-position: right;
 }
 
 .item{
