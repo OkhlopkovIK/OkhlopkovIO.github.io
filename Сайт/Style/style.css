@@ -282,7 +282,7 @@
 .footer{
     display: flex;
     flex-wrap: wrap;
-    height: 300px;
+    height: 100px;
     margin-bottom: 0;
     margin: 2.5px 5px 5px;
     padding-top: 10px;
@@ -292,6 +292,7 @@
     background-color: rgb(228, 196, 160);
     background-image: url("../Images/Footer.png");
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .item{
