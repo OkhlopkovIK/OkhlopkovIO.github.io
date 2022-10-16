@@ -137,7 +137,7 @@
 
 .menu{
     display:flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
 }
 
 .header_logo{
