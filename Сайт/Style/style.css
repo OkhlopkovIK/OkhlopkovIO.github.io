@@ -282,12 +282,13 @@
 .footer{
     display: flex;
     flex-wrap: wrap;
-    padding-top: 10px;
-    justify-content: space-between;
-    align-items: center;
     height: 100px;
     margin-bottom: 0;
+    margin: 2.5px 5px 5px;
+    padding-top: 10px;
     padding: 0 100px;
+    justify-content: space-between;
+    align-items: center;
     background-color: rgb(228, 196, 160);
     background-image: url("../Images/Footer.png");
 }
