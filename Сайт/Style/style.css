@@ -312,7 +312,7 @@
     background-repeat: repeat-x;
     background-origin: border-box;
     background-position: right;
-    text-shadow: 2px 2px 3px black, 2px 2px 1em var(--fbcolor);
+    text-shadow: 2px 2px 3px black, 2px 2px 2em var(--fscolor);
 }
 
 .item{
