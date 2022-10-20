@@ -307,6 +307,7 @@ h3 {
     flex-wrap: wrap;
     height: 100px;
     margin-bottom: 0;
+    margin-top: auto;
     margin: 2.5px 5px 5px;
     padding-top: 10px;
     padding: 0 100px;
