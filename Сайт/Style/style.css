@@ -374,12 +374,36 @@ th:first-child, td:first-child {
     text-align: center;
     color: var(--tcolor);
 }*/
-
 .grid{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     justify-items: center;
     width: 100%;
+}
+
+.left { 
+    grid-area: left; 
+}
+
+.right{ 
+  grid-area: right; 
+} 
+
+.form-div{
+    padding: 20px;
+    display: block;
+    text-align: left;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.align-center{
+    text-align: center;
 }
 
 textarea{
