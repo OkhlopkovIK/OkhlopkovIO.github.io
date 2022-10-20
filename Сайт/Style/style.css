@@ -215,7 +215,7 @@
     background-repeat: round;
 }
 
-.oldpaper_back{
+.oldpaper_back, .items{
     border-width: 2px;
     border-style: solid;
     border-color: var(--bcolor);
@@ -350,15 +350,13 @@ th:first-child, td:first-child {
     justify-items: center; 
 }
 .items {
-    background-color: var(--bgcolor);
-    background-image: ;
     text-align: center;
-    border: 2px solid var(--akcent-color);
+    border-color: var(--bcolor1);
     border-radius: 50px;
+    margin: 30px;
     padding: 20px;
     grid-column: span 1;
-    margin: 30px;
-    box-shadow: 1px 1px 6px 3px var(--akcent-color);
+    box-shadow: 1px 1px 6px 3px var(--bcolor1);
    
 }
 .item {
