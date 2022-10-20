@@ -329,20 +329,14 @@ thead, .browny {
     padding: 10px 20px;
 }
 
-th{
+th, td{
     border-style: solid;
     border-width: 0 1px 1px 0;
-    padding: 5px;
-}
-
-td {
-    border-style: solid;
-    border-width: 0 1px 1px 0;
-    border-color: var(--bcolor2);
     padding: 5px;
 }
     
 td {
+    border-color: var(--bcolor2);
     background: var(--bgcolor2);
 }
 
@@ -350,11 +344,32 @@ th:first-child, td:first-child {
     text-align: center;
 }
 
-.item{
+.cont_items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center; 
+}
+.items {
+    background-color: var(--bgcolor);
+    background-image: ;
+    text-align: center;
+    border: 2px solid var(--akcent-color);
+    border-radius: 50px;
+    padding: 20px;
+    grid-column: span 1;
+    margin: 30px;
+    box-shadow: 1px 1px 6px 3px var(--akcent-color);
+   
+}
+.item {
+    width: 80%;
+}
+
+/*.item{
     background-color: var(--bgcolor);
     text-align: center;
     color: var(--tcolor);
-}
+}*/
 
 .grid{
     display: grid;
