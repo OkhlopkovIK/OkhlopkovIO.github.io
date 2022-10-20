@@ -116,6 +116,11 @@
     --bcolor2: black;
 }
 
+h3 {
+    margin: 0;
+    padding: 20px;
+}
+
 .wrapper{
     max-width: 1000px;
     min-height: 250px;
