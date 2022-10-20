@@ -236,12 +236,6 @@
     justify-self: center;*/
 }
 
-.cards_t{
-    color: var(--tcolor);
-    font-size: 15px;
-   /* text-align: center; */
-}
-
 .brown_wooden_back{
     margin: 5px 0;
     padding: 10px 0;
