@@ -111,6 +111,7 @@
     --tbcolor: rgb(163, 238, 59);
     --fbcolor: rgb(244, 159, 21);
     --fscolor: var(--fbcolor);
+    --b1color: rgb(244, 159, 21);
 }
 
 .wrapper{
@@ -167,6 +168,10 @@
 .menu_nav a:hover{
     color: var(--tbcolor);
     background:var(--bgcolor);
+}
+
+.menu_nav a:last-child {
+    margin-right: 0;
 }
 
 .title{
@@ -307,6 +312,33 @@
     background-origin: border-box;
     background-position: right;
     text-shadow: 2px 2px 3px black, 0 0 0.2em var(--fscolor);
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    border-color: var(--akcent-color);
+}
+
+thead, .browny {
+    background: var(--element-color);
+    color: var(--akcent-color);
+    padding: 10px 20px;
+}
+    
+th, td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: var(--akcent-color);
+    padding: 5px;
+}
+    
+td {
+    background: var(--background-color);
+}
+
+th:first-child, td:first-child {
+    text-align: center;
 }
 
 .item{
