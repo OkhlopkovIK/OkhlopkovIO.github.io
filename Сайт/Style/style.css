@@ -349,6 +349,7 @@ th:first-child, td:first-child {
     grid-template-columns: repeat(3,1fr);
     justify-items: center; 
 }
+
 .items {
     text-align: center;
     border-color: var(--bcolor1);
