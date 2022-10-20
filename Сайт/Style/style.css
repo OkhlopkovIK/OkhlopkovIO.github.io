@@ -113,6 +113,7 @@
     --fscolor: var(--fbcolor);
     --bcolor1: rgb(237, 199, 32);
     --bgcolor2: rgb(244, 159, 21);
+    --bcolor2: black;
 }
 
 .wrapper{
@@ -323,6 +324,7 @@ table {
 
 thead, .browny {
     background: var(--bgcolor);
+    border-color: var(--bcolor1);
     color: var(--tcolor);
     padding: 10px 20px;
 }
@@ -330,7 +332,7 @@ thead, .browny {
 th, td {
     border-style: solid;
     border-width: 0 1px 1px 0;
-    border-color: var(--bcolor1);
+    border-color: var(--bcolor2);
     padding: 5px;
 }
     
