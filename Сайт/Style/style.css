@@ -111,8 +111,8 @@
     --tbcolor: rgb(163, 238, 59);
     --fbcolor: rgb(244, 159, 21);
     --fscolor: var(--fbcolor);
-    --bcolor1: rgb(244, 159, 21);
-    --bgcolor2: rgb(237, 199, 32);
+    --bcolor1: rgb(237, 199, 32);
+    --bgcolor2: rgb(244, 159, 21);
 }
 
 .wrapper{
