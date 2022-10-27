@@ -38,9 +38,12 @@
     <script>
         document.getElementById("test").innerText="hello";
     </script>
-    <button onclick="alert('Приятного дня!');">
+    <button id="show">
         Кнопка
     </button>
+    <script>
+        document.getElementById("show").onclick=alert("Приятного дня!");
+    </script>
     <script>
         function f(a){
             for(let i=0; i<a; i++){
