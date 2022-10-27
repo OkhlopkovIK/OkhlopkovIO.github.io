@@ -379,7 +379,8 @@ th:first-child, td:first-child {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     justify-items: center;
-    width: 100%;
+    /* width: 100%; */
+    height: 100vh;
 }
 
 .left { 
@@ -407,7 +408,7 @@ th:first-child, td:first-child {
     text-align: center;
 }
 
-textarea{
+/* textarea{
     resize:none;
-} 
+}  */
 
