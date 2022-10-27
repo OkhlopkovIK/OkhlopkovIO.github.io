@@ -1,6 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        function checkForm(el){
+            console.log("Some phrase");
+            let name = document.getElementById("name").value;
+            console.log(name);
+            let tel = document.getElementById("number").value;
+            let email = document.getElementById("adress").value;
+            let fail = false;
+            if(name=="" || name==" ") {
+                fail = "Введите имя!"
+                if(fail){
+                    alert(fail);
+                }
+            }
+            else if(name.length <= 2 || name.length > 50){
+                fail = "Введите имя!"
+                alert(fail);
+            }
+
+            if(tel=="" || tel==" ") {
+                fail = "Введите телефон!"
+                if(fail){
+                    alert(fail);
+                }
+            }
+            else if(tel.length <= 2 || tel.length > 12){
+                fail = "Введите телефон!"
+                alert(fail);
+            }
+
+            if(email=="" || email==" ") {
+                fail = "Введите email!"
+                if(fail){
+                    alert(fail);
+                }
+            }
+            else if(email.length <= 6 || name.length > 50){
+                fail = "Введите email!"
+                alert(fail);
+            }
+        }
+    </script>
     <link rel="stylesheet" href="../Style/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,7 +86,7 @@
     <main class="main">
         <div class="grid">
             <section class="items">
-                <form action="" method="get" id="form1" onsubmit="return checkForm(this)">
+                <form action="" method="get" id="form1">
                     <fieldset>
                         <legend> Как Вам удобно получить ответ:</legend>
                         <label for="">
@@ -120,7 +162,7 @@
                     </div>
 
                     <div class="align-center">
-                        <input type="submit" value="отправить вопрос" class="input-text">
+                        <input onclick="return checkForm(form1)" type="button" value="отправить вопрос">
                     </div>
 
                     <div id="error" style="color: red;"></div>

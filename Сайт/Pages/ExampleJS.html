@@ -38,11 +38,14 @@
     <script>
         document.getElementById("test").innerText="hello";
     </script>
-    <button id="show">
+    <!-- <button id="showmess">
         Кнопка
     </button>
     <script>
-        document.getElementById("show").onclick=alert("Приятного дня!");
+        document.getElementById("showmess").onclick=func("Приятного дня!");
+        function func(a){
+            alert(a);
+        } -->
     </script>
     <script>
         function f(a){
@@ -75,6 +78,19 @@
             }
         }
     </script>
-</body>
+    <div id="text_to_hide">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ipsum accusamus numquam neque eos quam voluptatum repellat quas, sint, placeat minima quasi sapiente libero inventore aperiam at molestiae id mollitia.
+    </div>
+    <button onclick="hide('text_to_hide')">
+        Скрыть
+    </button>
+    <script>
+        function hide(id){
+            let elem = document.getElementById(id);
+            let state = elem.style.display;
+            if(state=="")elem.style.display="none";
+            else elem.style.display="";
+        }
+    </script>
 </body>
 </html>
