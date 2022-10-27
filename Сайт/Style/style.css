@@ -210,6 +210,12 @@ h3 {
     align-content: center;
     text-align: right;
 }
+.main2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-content: center;
+    text-align: left;
+}
 
 .photo_sec_back{
     margin: 5px 40px;
@@ -235,6 +241,22 @@ h3 {
     grid-auto-rows: minmax(200px, auto);
     align-content: center;
 } */
+
+.port_foto1 {
+    max-width: 90%;
+    width: 350px;
+    grid-column: span 1;
+    margin:auto;
+    text-align: right;
+}
+    
+.port_foto2 {
+    max-width: 90%;
+    width: 350px;
+    grid-column: span 1;
+    margin:auto;
+    text-align: left;
+}
 
 .html_cards{
     display: grid;
