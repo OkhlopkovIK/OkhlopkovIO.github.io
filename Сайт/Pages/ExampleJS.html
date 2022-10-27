@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>console.log("Some phrase");</script>
+    <script>
+        for(i = 0; i < 100; i++){
+            document.writeln("Hello world");
+        }
+    document.write("Group 2181");
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>console.log("Hello world");</script>
+    <script>
+        for(i = 0; i < 100; i++){
+            document.writeln("Hello world");
+        }
+    document.write("Group 2181");
+    </script>
+    <!-- <script>
+        alert('Приятного дня!');
+    </script> -->
+    <script>
+        let greeting = "Hello world New";
+        console.log(greeting);
+        greeting = "Hello";
+        console.log(greeting);
+        const euro = 50;
+        let dollarsInEuro = 1.25;
+        let rublesInDollar = 60;
+        console.log(euro * dollarsInEuro * rublesInDollar);
+    </script>
+    <div id="test"> </div>
+    <script>
+        document.getElementById("test").innerText="hello";
+    </script>
+    <button onclick="alert('Приятного дня!');">
+        Кнопка
+    </button>
+    <script>
+        function f(a){
+            for(let i=0; i<a; i++){
+                document.writeln("!");
+            }
+        }
+    </script>
+    <button onclick="f(10)">
+        Запустить функцию
+    </button>
+    <div id="text">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia nemo hic, assumenda magnam, eius reiciendis et autem doloremque, nam officia ex vitae reprehenderit quidem maxime. Enim dolor cumque amet reiciendis.
+    </div>
+    <button id="color">
+        Изменить цвет
+    </button>
+    <script>
+        document.getElementById("color").onclick=changeColor;
+        let elem = document.getElementById("text");
+        let currentColor = "red";
+        function changeColor(){
+            if(currentColor == "red"){
+                elem.style.color = "green";
+                currrentColor = "green";
+            }
+            else{
+                elem.style.color = "red";
+                currrentColor = "red";
+            }
+        }
+    </script>
+</body>
+</body>
+</html>

@@ -42,77 +42,92 @@
         </div>
     </header>
     <main class="main">
-        <section class="items">
-            <div class="grid">
-                <form class="item" action="" method="get" id="form1" onsubmit="return checkForm(this)">
+        <div class="grid">
+            <section class="items">
+                <form action="" method="get" id="form1" onsubmit="return checkForm(this)">
                     <fieldset>
                         <legend> Как Вам удобно получить ответ:</legend>
                         <label for="">
-                            <input type="radio" name="Connection" id="Post">
+                            <input type="radio" name="Connection" id="post" value="по почте">
                             По почте
                         </label>
                         <br>
                         <label for="">
-                            <input type="radio" name="Connection" id="Tel">
+                            <input type="radio" name="Connection" id="tel" value="по телефону">
                             По телефону
                         </label>
                         <br>
                         <label for="">
-                            <input type="radio" name="Connection" id="None">
+                            <input type="radio" name="Connection" id="none" value="не нужно отвечать">
                             Не отвечать
                         </label>
                         <br>
                     </fieldset>
 
-                    <div>
-                        <label for="name">Ваше имя:</label>
-                        <input type="text" id="name" placeholder="Введите ФИО">
+                    <div class="form-div">
+                        <label for="theme"> Укажите тему вопроса</label>
+                        <br>
+                        <select name="" id="theme">
+                            <option value="work">
+                                Работа
+                            </option>
+                             <option value="coop">
+                                Сотрудничество
+                            </option>
+                            <option value="personal">
+                                Личное
+                            </option>
+                        </select>
                     </div>
-                    <div>
-                        <label for="adress">E-mail:</label>
-                        <input type="email" id="adress" placeholder="Введите e-mail">
-                    </div>
-                    <div>
-                        <label for="number">Телефон:</label>
-                        <input type="tel" id="number" placeholder="Введите телефон">
-                    </div>
-                    <textarea>
-    
-                    </textarea>
-                    <fieldset>
-                        <legend> Задайте еще один вопрос </legend>
+
+                    <fieldset class="form-div">
+                        <legend> И еще один вопрос? </legend>
                         <label for="checkbox1">
-                            <input type="checkbox" name="Question" id="checkbox1">
-                            Кто?
+                            <input type="checkbox" name="Question" id="checkbox1" value="может так">
+                            Может так?
                         </label>
                         <label for="checkbox2">
-                            <input type="checkbox" name="Question" id="checkbox2">
-                            Куда?
+                            <input type="checkbox" name="Question" id="checkbox2" value="или не так">
+                            Или не так?
                         </label>
                         <label for="checkbox3">
-                            <input type="checkbox" name="Question" id="checkbox3">
-                            Откуда?
+                            <input type="checkbox" name="Question" id="checkbox3" value="иначе">
+                            Иначе?
                         </label>
                     </fieldset>
-                    <label for="theme"> Укажите тему вопроса</label>
-                    <br>
-                    <select name="" id="theme">
-                        <option value="work">
-                            Работа
-                        </option>
-                        <option value="coop">
-                            Сотрудничество
-                        </option>
-                        <option value="personal">
-                            Личное
-                        </option>
-                    </select>
-                    <div>
-                        <input type="submit" value="отправить вопрос">
+
+                    <div class="form-div flex-row" id="name1">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" name="name" id="name" placeholder="Введите ФИО">
                     </div>
+
+                    <div class="form-div flex-row" id="email1">
+                        <label for="adress">E-mail:</label>
+                        <input type="email" name="adress" id="adress" placeholder="Введите e-mail">
+                    </div>
+
+                    <div class="form-div flex-row" id="tel1">
+                        <label for="number">Телефон:</label>
+                        <input type="tel" name="number" id="number" placeholder="Введите телефон">
+                    </div>
+
+                    <div class="form-div">
+                        <div>Ваш вопрос:</div> 
+                        <div>
+                            <textarea cols="30">
+                            </textarea>
+                        </div>
+                    </div>
+
+                    <div class="align-center">
+                        <input type="submit" value="отправить вопрос" class="input-text">
+                    </div>
+
+                    <div id="error" style="color: red;"></div>
+                    <div id="output" style="color: rgb(0, 255, 21);"></div>
                 </form>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
     <footer class="footer">
         <div>
