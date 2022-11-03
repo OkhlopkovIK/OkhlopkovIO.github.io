@@ -8,6 +8,7 @@
             console.log(name);
             let tel = document.getElementById("number").value;
             let email = document.getElementById("adress").value;
+            let out = name.value + " " + email.value + " " + tel.value;
             let fail = false;
             if(name=="" || name==" ") {
                 fail = "Введите имя!"
@@ -16,8 +17,10 @@
                 }
             }
             else if(name.length <= 2 || name.length > 50){
-                fail = "Введите имя!"
-                alert(fail);
+                fail = "Введите корректное имя!"
+                if(fail){
+                    alert(fail);
+                }
             }
 
             if(tel=="" || tel==" ") {
@@ -27,8 +30,10 @@
                 }
             }
             else if(tel.length <= 2 || tel.length > 12){
-                fail = "Введите телефон!"
-                alert(fail);
+                fail = "Введите корректный телефон!"
+                if(fail){
+                    alert(fail);
+                }
             }
 
             if(email=="" || email==" ") {
@@ -38,9 +43,17 @@
                 }
             }
             else if(email.length <= 6 || name.length > 50){
-                fail = "Введите email!"
-                alert(fail);
+                fail = "Введите корректный email!"
+                if(fail){
+                    alert(fail);
+                }
             }
+
+            if(fail == ""){
+                document.getElementById('output').innerText = out;
+            } else {
+                document.getElementById('error').innerHTML = fail;
+            } 
         }
     </script>
     <link rel="stylesheet" href="../Style/style.css">
@@ -87,20 +100,20 @@
         <div class="grid">
             <section class="items">
                 <form action="" method="get" id="form1">
-                    <fieldset>
+                    <fieldset class="form-div" id="connection1">
                         <legend> Как Вам удобно получить ответ:</legend>
                         <label for="">
-                            <input type="radio" name="Connection" id="post" value="по почте">
+                            <input type="radio" name="connection" id="post" value="по почте">
                             По почте
                         </label>
                         <br>
                         <label for="">
-                            <input type="radio" name="Connection" id="tel" value="по телефону">
+                            <input type="radio" name="connection" id="tel" value="по телефону">
                             По телефону
                         </label>
                         <br>
                         <label for="">
-                            <input type="radio" name="Connection" id="none" value="не нужно отвечать">
+                            <input type="radio" name="connection" id="none" value="не нужно отвечать">
                             Не отвечать
                         </label>
                         <br>
@@ -179,5 +192,23 @@
         </div>
         <div> Сайт создан OIK, Copyright © 2022</div>
     </footer>
+    <script>
+        document.getElementById('connection1').addEventListener("click", hiddenCloseclick);
+        function hiddenCloseclick() {
+        let x = document.getElementById('email1');
+        let y = document.getElementById('tel1');
+            
+        if (document.getElementById("post").checked) {
+             x.style.visibility = "visible";
+        } else {
+             x.style.visibility = "hidden";
+        }
+          
+        if (document.getElementById("tel").checked) {
+             y.style.visibility = "visible";
+        } else {
+             y.style.visibility= "hidden"};
+        }
+    </script>
 </body>
 </html>
