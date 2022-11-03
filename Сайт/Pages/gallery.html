@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../Style/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="slider">
+                <div class="sliderLine">
+                    <img src="../Images/1.jpg" alt="логотип" class="mini">
+                    <img src="../Images/2.jpg" alt="логотип" class="mini">
+                    <img src="../Images/3.jpg" alt="логотип" class="mini">
+                    <img src="../Images/4.jpg" alt="логотип" class="mini">
+                    <img src="../Images/5.jpg" alt="логотип" class="mini">
+                </div>
+            </div>
+            <button class="sliderPrev">
+                Previous
+            </button>
+            <button class="sliderNext">
+                Next
+            </button>
+        </div>
+        <script>
+            let offset = 0;
+            const sliderLine = document.querySelector('.sliderLine');
+            document.querySelector('.sliderNext').addEventListener('click', function(){
+                offset += 256;
+                if (offset > 1024) {
+                    offset = 0;
+                }
+                sliderLine.style.left = - offset + 'px';
+            });
+            document.querySelector('.sliderPrev').addEventListener('click', function(){
+                offset -= 256;
+                if (offset < 0) {
+                    offset = 1024;
+                }
+                sliderLine.style.left = - offset + 'px';
+            });
+        </script>
+    </section>
+    <section>
+        <div class="block"> </div>
+        <script>
+            var arr = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg'];
+            let block = document.querySelector('.block');
+            let i = 0;
+            block.onclick = change;
+            function change (){
+                block.style.backgroundImage = 'url(../Images/' + arr[i] + ')';
+                i++;
+                if (i == arr.Length){
+                    i = 0;
+                }
+            }
+        </script>
+    </section>
+</body>
+</html>
