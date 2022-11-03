@@ -434,3 +434,43 @@ th:first-child, td:first-child {
     resize:none;
 }  */
 
+ .container{
+    max-width: 1200px;
+    margin: 10px;
+    padding: 20px;
+    background: rgb(232, 162, 57);
+    text-align: center;
+ }
+
+ .mini{
+    width: 256px;
+    height: 170px;
+ }
+
+ .slider{
+    border: 2px solid black;
+    width: 256px;
+    height: 170px;
+    margin: 10px;
+    padding: 0;
+    overflow: hidden;
+ }
+
+ .sliderLine{
+    display: flex;
+    height: 170px;
+    width: 1280px;
+    position: relative;
+    left: 0; 
+    transition: all ease 1s;
+ }
+
+ .block{
+    width: 256px;
+    height: 170px;
+    border: 2px solid black;
+    background-size: cover;
+    margin: 10px;
+    padding: 0;
+ }
+
