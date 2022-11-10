@@ -476,12 +476,19 @@ th:first-child, td:first-child {
  }
 
  .container2{
-    max-width: 1000px;
-    margin: 0 auto; 
-    color: rgb(49, 5, 5);
-    padding: 100px 50px;
-    background: rgb(167, 220, 233);
     text-align: center;
+    border-color: var(--bcolor1);
+    border-radius: 50px;
+    margin: 30px;
+    padding: 40px;
+    grid-column: span 1;
+    box-shadow: 1px 1px 6px 3px var(--bcolor1);
+    max-width: 1000px;
+    border-width: 2px;
+    border-style: solid;
+    background-image: url("../Images/Old_paper.jpg");
+    background-color: var(--bgcolor);
+    background-repeat: no-repeat;
 }
 
 .zoom{
@@ -510,6 +517,7 @@ th:first-child, td:first-child {
 	background-repeat: no-repeat; 
 	background-position: center; 
 	background-size: cover;  
-	margin-left: 5px; 
+	margin-left: 5px;
+    margin-right: 5px; 
 }
 
