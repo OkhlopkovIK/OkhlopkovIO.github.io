@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../Style/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <canvas width="500px" height="500px" id="canvas"> </canvas>
+        <script>
+            const data = [16, 68, 20, 90, 35];
+            const canvas = document.getElementById('canvas');
+            let c = canvas.getContext("2d");
+            c.fillStyle = "blue";
+            c.fillRect(0,0,500,500); // x, y, width, height
+            c.fillStyle = "green";
+            for(let i = 0; i < data.length; i++){
+                let dp = data[i];
+                c.fillRect(25 + i * 100, 500 - dp * 5 - 25, 50, dp * 5);
+            }
+            c.strokeStyle = "black";
+            c.lineWidth = 2.0;
+            c.beginPath();
+            c.moveTo(25, 10);
+            c.lineTo(25, 475);
+            c.lineTo(490, 475);
+            c.stroke();
+            c.fillStyle = "red";
+            c.strokeStyle = "red";
+            for(i = 0; i < 6; i++){
+                c.fillText((5-i) * 20 + " ", 4, i * 80 + 77);
+                c.lineWidth = 2.0;
+                c.beginPath();
+                c.moveTo(25, i * 80 + 75);
+                c.lineTo(475, i * 80 + 75);
+                c.stroke();
+            }
+            const labels = ["jan", "feb", "mar", "apr", "may"];
+            for(i = 0; i < 5; i++){
+                c.fillText(labels[i], 45 + i * 100, 495);
+            }
+        </script>
+    </section>
+    <section>
+        <canvas width="500px" height="500px" id="canvas1"> </canvas>
+        <script>
+            const data1 = [100, 60, 20, 30, 95];
+            const canvas1 = document.getElementById('canvas1');
+            let d = canvas1.getContext("2d");
+            d.fillStyle = "yellow";
+            d.fillRect(0,0,500,500); // x, y, width, height
+            const colors = ["orange", "blue", "white", "brown", "pink"]
+            let total = 0;
+            for(let i = 0; i < data1.length; i++){
+                total += data1[i];
+            }
+            let prevAngle = 0;
+            for (let i = 0; i < data1.length; i++){
+                let fraction = data1[i] / total;
+                const angle = prevAngle + fraction * Math.PI * 2;
+                d.beginPath();
+                d.moveTo(250, 250);
+                d.arc(250, 250, 100, prevAngle, angle, false);
+                d.lineTo(250,250);
+                d.fillStyle = colors[i];
+                d.fill();
+                d.strokeStyle = "black";
+                d.stroke();
+                prevAngle = angle;
+            }
+        </script>
+    </section>
+</body>
+</html>
