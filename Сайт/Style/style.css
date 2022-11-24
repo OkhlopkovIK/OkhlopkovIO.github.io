@@ -114,6 +114,8 @@
     --bcolor1: rgb(237, 199, 32);
     --bgcolor2: rgb(244, 159, 21);
     --bcolor2: black;
+    --ifbcolor: black;
+    /* --bgcolor2: rgb(245, 153, 4); */
 }
 
 h3 {
@@ -226,7 +228,7 @@ h3 {
     background-repeat: round;
 }
 
-.oldpaper_back, .items{
+.oldpaper_back, .items, .container2, .chart {
     border-width: 2px;
     border-style: solid;
     border-color: var(--bcolor);
@@ -328,9 +330,7 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     height: 100px;
-    margin-bottom: 0;
-    margin-top: auto;
-    margin: 2.5px 5px 5px;
+    margin: 2.5px 5px 5px 0;
     padding-top: 10px;
     padding: 0 100px;
     justify-content: space-between;
@@ -402,7 +402,7 @@ th:first-child, td:first-child {
     grid-template-columns: repeat(2,1fr);
     justify-items: center;
     /* width: 100%; */
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .left { 
@@ -434,38 +434,38 @@ th:first-child, td:first-child {
     resize:none;
 }  */
 
- .container{
+.container{
     max-width: 1200px;
     margin: 10px;
     padding: 20px;
     background: rgb(232, 162, 57);
     text-align: center;
- }
+}
 
- .mini{
+.mini{
     width: 256px;
     height: 170px;
- }
+}
 
- .slider{
+.slider{
     border: 2px solid black;
     width: 256px;
     height: 170px;
     margin: 10px;
     padding: 0;
     overflow: hidden;
- }
+}
 
- .sliderLine{
+.sliderLine{
     display: flex;
     height: 170px;
     width: 1280px;
     position: relative;
     left: 0; 
     transition: all ease 1s;
- }
+}
 
- .block{
+.block{
     width: 256px;
     height: 170px;
     border: 2px solid black;
@@ -473,22 +473,22 @@ th:first-child, td:first-child {
     /* background-size: cover; */
     margin: 10px;
     padding: 0;
- }
+}
 
- .container2{
+.container2{
     text-align: center;
-    border-color: var(--bcolor1);
+    /* border-color: var(--bcolor1); */
     border-radius: 50px;
     margin: 30px;
     padding: 40px;
     grid-column: span 1;
     box-shadow: 1px 1px 6px 3px var(--bcolor1);
     max-width: 1000px;
-    border-width: 2px;
+    /* border-width: 2px;
     border-style: solid;
     background-image: url("../Images/Old_paper.jpg");
     background-color: var(--bgcolor);
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
 .zoom{
@@ -519,5 +519,72 @@ th:first-child, td:first-child {
 	background-size: cover;  
 	margin-left: 5px;
     margin-right: 5px; 
+}
+
+.chart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 600px;
+    margin: 0 auto;
+    border-radius: 50px;
+    margin: 30px;
+    padding: 40px;
+    box-shadow: 1px 1px 6px 3px var(--bcolor1);
+}
+
+.chart__title {
+    width: 100%;
+    text-align: center;
+}
+
+.chart__data {
+    width: 150px;
+}
+
+.chart__input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.chart__input-group:last-of-type {
+    margin-bottom: 95px;
+}
+
+.input-field {
+    white-space: normal;
+    border: 1px solid var(--ifbcolor);
+    border-radius: 5px;
+    margin: 10px;
+}
+  
+.chart__input {
+    width: 60px;
+    margin-right: 5px;
+}
+  
+.chart__submit-button {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid var(--ifbcolor);
+    background-color: var(--bgcolor1);
+    box-shadow: 1px 1px 6px 3px var(--bcolor1);
+    border-radius: 5px;
+    color: var(--tcolor);
+}
+
+.chart__submit-button:hover{
+    color: var(--bcolor);
+    background:var(--bgcolor2);
+}
+  
+.chart__canvas-wrapper {
+    height: 250px;
+    border: 1px solid var(--ifbcolor);
+    background-color: var(--bgcolor1);
+    box-shadow: 1px 1px 6px 3px var(--bcolor1);
+    border-radius: 5px;
 }
 

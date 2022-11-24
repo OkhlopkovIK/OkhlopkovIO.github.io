@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../Style/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        localStorage.setItem('data', 6);
+        console.log(localStorage.getItem('data'));
+        localStorage['data5'] = 'item1';
+        console.log(localStorage['data5']);
+        delete localStorage['data5'];
+
+        const a = [4, 5, 6, 7, 2, 5];
+        localStorage.setItem('a', JSON.stringify(a));
+
+        let b = localStorage.getItem('a');
+        console.log(b);
+        console.log(b[3]);
+        console.log(typeof(b));
+
+        b = JSON.parse(localStorage.getItem('a'));
+        console.log(b);
+        console.log(b[3]);
+        console.log(typeof(b));
+
+        const c = {
+            hello: 5,
+            k: 20,
+            4: 'hi'
+        };
+        localStorage.setItem('c', JSON.stringify(c));
+        let d = localStorage.getItem('c');
+        d = JSON.parse(d);
+        console.log(d);
+        console.log(typeof(d));
+
+        window.addEventListener('storage', function(e){
+            console.log('change');
+        })
+
+    </script>
+
+    <div>
+        <h1> Удаление </h1>
+        <button id="remove">
+            удалить
+        </button>
+    </div>
+
+    <script>
+        sessionStorage.setItem('name', 123);
+        let f = sessionStorage.getItem('name');
+        console.log(f);
+
+        document.querySelector('#remove').onclick = () => {
+            sessionStorage.removeItem('name');
+        }
+
+        console.log(name);
+    </script>
+
+
+    <section>
+        <textarea name="" id="textArea" cols="30" rows="15"></textarea>
+        <button onclick="localStorage.removeItem('saveText'); textArea.value = ''"> Очистить</button>
+    </section>
+    <script>
+        document.getElementById('textArea').oninput = function text () {
+            sessionStorage.setItem('saveText', document.getElementById("textArea").value);
+        }
+        document.getElementById('textArea').value = localStorage.getItem('saveText');
+    </script>
+
+    <section>
+        <h1> Выбрать тему</h1>
+        <select name="" id="theme">
+            <option name="" value="auto"></option>
+            <option name="" value="light"></option>
+            <option name="" value="dark"></option>
+        </select>
+    </section>
+</body>
+</html>

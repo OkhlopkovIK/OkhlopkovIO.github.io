@@ -73,5 +73,18 @@
             }
         </script>
     </section>
+    <section>
+        <h1> хранение LS </h1>
+        <button class="1s" id="any">
+            жми
+        </button>
+        <script>
+            let count = 0;
+            document.getElementById('any').onclick = () => {
+                count++;
+                localStorage.setItem('b1', count);
+            }
+        </script>
+    </section>
 </body>
 </html>
