@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
+    <!-- <script>
         localStorage.setItem('data', 6);
         console.log(localStorage.getItem('data'));
         localStorage['data5'] = 'item1';
@@ -62,7 +62,7 @@
         }
 
         console.log(name);
-    </script>
+    </script> -->
 
 
     <section>
@@ -71,18 +71,63 @@
     </section>
     <script>
         document.getElementById('textArea').oninput = function text () {
-            sessionStorage.setItem('saveText', document.getElementById("textArea").value);
+            localStorage.setItem('saveText', document.getElementById("textArea").value);
         }
         document.getElementById('textArea').value = localStorage.getItem('saveText');
     </script>
 
     <section>
+        <div class="item">
+            <h1>Новая задача</h1>
+            <form class="form">
+                <input id="item" type="text" placeholder="Ввод" required>
+            </form>
+            <h2>Задача</h2>
+            <ul class="ul"></ul>
+            <button id="button">Очистить</button>
+        </div>
+    </section>
+    <script>
+        const form = document.querySelector(".form");
+        const ul = document.querySelector(".ul");
+        const button = document.getElementById("button");
+        const input = document.getElementById("item");
+        let itemsArray = [];
+
+        const data = JSON.parse(localStorage.getItem('items'));
+
+        const liMarker = (text) => {
+            const li = document.createElement('li');
+            li.textContent = text;
+            ul.appendChild(li);
+        }    
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            liMarker(input.value);
+            itemsArray.push(input.value);
+            localStorage.setItem('items', JSON.stringify(itemsArray));
+            input.value = "";
+        });
+        data.forEach(item => {
+            liMarker(item);
+        });
+
+        button.addEventListener('click', function() {
+            localStorage.clear();
+            while(ul.firstChild){
+                ul.removeChild(ul.firstChild);
+            };
+            itemsArray = [];
+        })
+    </script>
+
+    <!-- <section>
         <h1> Выбрать тему</h1>
         <select name="" id="theme">
             <option name="" value="auto"></option>
             <option name="" value="light"></option>
             <option name="" value="dark"></option>
         </select>
-    </section>
+    </section> -->
 </body>
 </html>
