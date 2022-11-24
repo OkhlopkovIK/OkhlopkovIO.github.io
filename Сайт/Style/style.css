@@ -115,7 +115,7 @@
     --bgcolor2: rgb(244, 159, 21);
     --bcolor2: black;
     --ifbcolor: black;
-    /* --bgcolor2: rgb(245, 153, 4); */
+    --bbcolor: rgb(117, 68, 4);
 }
 
 h3 {
@@ -569,7 +569,7 @@ th:first-child, td:first-child {
     padding: 10px;
     cursor: pointer;
     border: 1px solid var(--ifbcolor);
-    background-color: var(--bgcolor1);
+    background-color: var(--bbcolor);
     box-shadow: 1px 1px 6px 3px var(--bcolor1);
     border-radius: 5px;
     color: var(--tcolor);
