@@ -100,7 +100,33 @@
             <h2> Университет Дубна </h2>
         </div>
     </header>
-    <main class="main">
+    <main>
+        <section>
+            <div>Выберете тему:</div>
+            <select name="" id="theme">
+                <option value="auto">По умолчанию</option>
+                <option value="dark">Темная тема</option>
+                <option value="light">Светлая тема</option>
+            </select>
+            <script>
+            function applyTheme(theme){
+                document.body.classList.remove("theme-auto", "theme-light", "theme-dark");
+                document.body.classList.add(`theme-${theme}`);
+            }
+            document.addEventListener("DOMContentLoaded", ()=>{
+                document.querySelector("#theme").addEventListener("change", function(){applyTheme(this.value);});});
+            document.addEventListener("DOMContentLoaded", () => {
+                const savedTheme = localStorage.getItem("theme") || "auto";
+                applyTheme(savedTheme);
+                for (const optionElement of document.querySelectorAll("#theme option")){
+                    optionElement.selected = savedTheme === optionElement.value;
+                }
+                document.querySelector("#theme").addEventListener("change", function(){
+                localStorage.setItem("theme", this.value);
+                applyTheme (this.value);})
+            })
+            </script>
+        </section>
         <div class="grid">
             <section class="items">
                 <form action="" method="get" id="form1">
@@ -297,9 +323,9 @@
                     const maxNum = 40;
                     const COLORS = [`#fff8dc`,`#f4a460`,`#800000`];
                     const BarSize = { MAX_HEIGHT: 190, WIDTH: 40 };
-                    const BarCoordinate = { INITIAL_X: 70, INITIAL_Y: 220 };
+                    const BarCoordinate = { INITIAL_X: 80, INITIAL_Y: 220 };
                     const Font = { SIZE: `18px`, FAMILY: `Tahoma`};
-                    const LabelCoordinate = { INITIAL_X: 30, INITIAL_Y: 60};
+                    const LabelCoordinate = { INITIAL_X: 30, INITIAL_Y: 70};
                     const Gap = { HORIZONTAL: 80, VERTICAL: 30};
                     const formElement1 = document.querySelector(`.chart__data`);
                     const inputElements = formElement1.querySelectorAll(`.chart__input`);
@@ -316,6 +342,22 @@
                         let currentBarX = BarCoordinate.INITIAL_X;
                         let currentLabelY = LabelCoordinate.INITIAL_Y; 
                         const gapBetweenBars = BarSize.WIDTH + Gap.HORIZONTAL;
+                        ctx.strokeStyle = "orange";
+                        ctx.lineWidth = 2.0;
+                        ctx.beginPath();
+                        ctx.moveTo(35, 20);
+                        ctx.lineTo(35, 220);
+                        ctx.stroke();
+                        ctx.fillStyle = "orange"
+                        ctx.font = `10px ${Font.FAMILY}`;
+                        for(i = 0; i < 5; i++){
+                            ctx.fillText(i * 10 + " ", 17, 220 - i * (190 / 4) + 2);
+                            ctx.lineWidth = 2.0;
+                            ctx.beginPath();
+                            ctx.moveTo(33, 220 - i * (190 / 4));
+                            ctx.lineTo(37, 220 - i * (190 / 4));
+                            ctx.stroke();
+                        }
                         for (const item of items) {
                             const barHeight = (item.value * BarSize.MAX_HEIGHT) / maxNum;
                             ctx.fillStyle = item.color;
@@ -338,6 +380,52 @@
                     });
                 </script>
             </section>
+
+            <section>
+                <div class="items">
+                    <h1>Новая задача</h1>
+                    <form class="form">
+                        <input id="item" type="text" placeholder="Введите задачу" required>
+                    </form>
+                    <h2>Задача</h2>
+                    <ul class="ul"></ul>
+                    <button id="button">Очистить</button>
+                </div>
+            </section>
+            <script>
+                const form = document.querySelector(".form");
+                const ul = document.querySelector(".ul");
+                const button = document.getElementById("button");
+                const input = document.getElementById("item");
+                let itemsArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
+        
+                localStorage.setItem('items', JSON.stringify(itemsArray));
+                const data = JSON.parse(localStorage.getItem('items'));
+        
+                const liMarker = (text) => {
+                    const li = document.createElement('li');
+                    li.textContent = text;
+                    ul.appendChild(li);
+                }    
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    liMarker(input.value);
+                    itemsArray.push(input.value);
+                    localStorage.setItem('items', JSON.stringify(itemsArray));
+                    input.value = "";
+                });
+                data.forEach(item => {
+                    liMarker(item);
+                });
+        
+                button.addEventListener('click', function() {
+                    localStorage.removeItem('items');
+                    while(ul.firstChild){
+                        ul.removeChild(ul.firstChild);
+                    };
+                    itemsArray = [];
+                })
+            </script>
         </div>
     </main>
     <footer class="footer">

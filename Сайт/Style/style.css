@@ -106,6 +106,8 @@
 :root{
     --bgcolor: rgb(51, 26, 6);
     --bgcolor1: rgb(11, 4, 1);
+    --bgcolor3: rgb(11, 4, 1);
+    --bgcolor-light:rgb(130, 75, 49);
     --bcolor: rgb(11, 4, 1);
     --tcolor:rgb(237, 199, 32);
     --tbcolor: rgb(163, 238, 59);
@@ -114,6 +116,7 @@
     --bcolor1: rgb(237, 199, 32);
     --bgcolor2: rgb(244, 159, 21);
     --bcolor2: black;
+    --bcolor3: rgb(237, 199, 32);
     --ifbcolor: black;
     --bbcolor: rgb(117, 68, 4);
 }
@@ -190,10 +193,26 @@ h3 {
     text-shadow: 2px 2px 3px black, 0 0 3em var(--bgcolor);
 }
 
+main{
+    text-align: center;
+    margin: 0 5px;
+    background-color: var(--bgcolor3);
+}
+
 .main{
     text-align: center;
     margin: 0 5px;
     background-color: var(--bgcolor1);
+}
+
+body{
+    background-color: var(--bgcolor1);
+    font-family: 'Fira Sans Condensed';
+    font-style: italic;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .body{
@@ -570,7 +589,7 @@ th:first-child, td:first-child {
     cursor: pointer;
     border: 1px solid var(--ifbcolor);
     background-color: var(--bbcolor);
-    box-shadow: 1px 1px 6px 3px var(--bcolor1);
+    box-shadow: 1px 1px 6px 3px var(--bcolor3);
     border-radius: 5px;
     color: var(--tcolor);
 }
@@ -584,7 +603,19 @@ th:first-child, td:first-child {
     height: 250px;
     border: 1px solid var(--ifbcolor);
     background-color: var(--bgcolor1);
-    box-shadow: 1px 1px 6px 3px var(--bcolor1);
+    box-shadow: 1px 1px 6px 3px var(--bcolor3);
     border-radius: 5px;
 }
+
+body.theme-light {
+    --bgcolor3: var(--bgcolor-light);
+    --bcolor1: var(--bcolor2);
+}
+
+@media (prefers-color-scheme: dark) {
+    body.theme-auto {
+        --bgcolor3: var(--bgcolor-dark);
+        --bcolor1: var(--bcolor2);
+    }
+}  
 
